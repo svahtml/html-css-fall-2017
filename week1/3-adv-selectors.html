@@ -3,6 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>Basic Selectors</title>
+    <style>
+    article > p {
+      color: green;
+    }
+
+    h2 + p {
+      color: deeppink;
+    }
+
+    ol > li:first-child {
+      color: yellowgreen;
+    }
+
+    ul li:last-child {
+      color: darkblue;
+    }
+
+    li:first-child:last-child {
+      font-size: 25px;
+    }
+
+    article > *:not(p) {
+      color: orange;
+    }
+
+    .socail-list li:not(:last-child) a {
+      color: red;
+    }
+    </style>
 </head>
 <body>
 <div class="wrapper">

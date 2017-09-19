@@ -3,6 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <title>Basic Selectors</title>
+    <!-- HTML Commit -->
+    <style>
+    /* CSS Comment */
+    /* Tag Name Selector */
+
+    h1 {
+      color: red;
+    }
+
+    h2 {
+      color: blue;
+    }
+
+    li {
+      color: green;
+    }
+
+    /* class name selector */
+    .intro {
+      color: yellowgreen;
+    }
+
+    p.intro {
+      font-weight: bold;
+    }
+
+    li.intro {
+      color: aqua;
+    }
+
+    /* ID name selector don't use */
+    /*#footer-primary {
+      color: orange;
+    }*/
+
+    p {
+      color: orange;
+    }
+
+    article p {
+      color: green;
+    }
+
+    blockquote p {
+      font-size: 20px;
+    }
+
+    .global-header ul li.item a.selected {
+
+    }
+
+    </style>
 </head>
 <body>
 <div class="wrapper">
@@ -28,7 +80,7 @@
       <ol>
         <li class="first">one</li>
         <li>two</li>
-        <li>three</li>
+        <li class="intro">three</li>
         <li>four</li>
         <li class="last">five</li>
       </ol>

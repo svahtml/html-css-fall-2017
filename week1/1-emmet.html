@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Learning Emmet</title>
+
+  <style>
+  body {
+    background-color: #c0c0c0;
+    font: 16px arial;
+  }
+  </style>
+
+</head>
+<body>
+
+<!-- h1 -->
+<h1>Learning to use Emmet</h1>
+
+<!-- p{This is a paragraph} -->
+<p>This is a paragraph</p>
+
+<!-- p.intro -->
+<p class="intro">Intro Text</p>
+
+<!-- ul>li.item{Item $}*3 -->
+<ul>
+  <li class="item">Item 1</li>
+  <li class="item">Item 2</li>
+  <li class="item">Item 3</li>
+</ul>
+
+<!-- p*2>lorem -->
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus neque error quos odio tempora cupiditate vero asperiores corrupti. Maiores vitae vero, quas, nihil obcaecati veritatis earum ut harum rerum praesentium.</p>
+<p>Quam quasi voluptatem accusamus ullam ducimus est deserunt natus quo quaerat sed asperiores necessitatibus recusandae velit ipsum, maiores sunt debitis assumenda pariatur ut doloribus atque eligendi iste laborum. Recusandae, veritatis!</p>
+
+<!-- p>lorem100 -->
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, harum, earum. Praesentium officiis ipsum dolores sed, debitis aliquid, rerum consequuntur possimus laboriosam corporis perspiciatis repellat eos commodi ut adipisci amet similique magni numquam quaerat temporibus iusto dolore sint! Amet repellat deserunt commodi iusto repellendus exercitationem, mollitia culpa similique cumque pariatur fuga fugit eligendi officiis illum dolor, et ullam dolore, nemo assumenda. Esse modi sit impedit doloremque amet laudantium consequuntur, cumque libero officia culpa! Blanditiis iure dignissimos ea sapiente, alias, soluta, doloribus facilis consequatur ut id et fugit mollitia a sed officiis, provident possimus sint nostrum praesentium? Minima ratione, excepturi quasi?</p>
+
+<!-- h1+p -->
+<h1></h1>
+<p></p>
+
+<!-- .wrapper>header>h1^nav -->
+<div class="wrapper">
+  <header>
+    <h1></h1>
+  </header>
+  <nav></nav>
+</div>
+
+<!-- div>(header>ul>li*2>a)+footer -->
+<div>
+  <header>
+    <ul>
+      <li><a href=""></a></li>
+      <li><a href=""></a></li>
+    </ul>
+  </header>
+  <footer></footer>
+</div>
+
+<h2>Wrapping Text</h2>
+
+<p>Wrap <strong>text</strong> with command of <code>control + w</code></p>
+
+<!-- nav>ul>li*>a[href=http://www.$#.com class=$#]{$#} -->
+
+<nav>
+  <ul>
+    <li><a href="http://www.facebook.com" class="facebook">facebook</a></li>
+    <li><a href="http://www.twitter.com" class="twitter">twitter</a></li>
+    <li><a href="http://www.instagram.com" class="instagram">instagram</a></li>
+  </ul>
+</nav>
+
+
+
+</body>
+</html>
