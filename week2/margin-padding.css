@@ -1,0 +1,44 @@
+body {
+  font: 16px arial;
+  background-color: #c0c0c0;
+}
+
+.padding-example {
+  border: 1px solid black;
+  background-color: #fff;
+  text-align: justify;
+  padding: 2em;
+}
+
+.margin-example {
+  background-color: #fff;
+  border: 5px solid #cc00cc;
+  padding: 1em;
+  margin: 1em 0;
+}
+
+.example {
+  background-color: #00cc00;
+  border: 1px solid black;
+  padding: 1em;
+  margin: 1em 0;
+}
+
+.example p {
+  background-color: tan;
+  margin: 0;
+}
+
+.highlightBox {
+  background-color: #fff;
+  padding: 1em;
+  margin: 1em 0;
+}
+
+.highlightBox p:first-child {
+  margin-top: 0;
+}
+
+.highlightBox p:last-child {
+  margin-bottom: 0;
+}
