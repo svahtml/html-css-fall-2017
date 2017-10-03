@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
 	<title>Clear Fix</title>
-	
+
 	<style>
 	body {
 		font: 14px arial;
@@ -32,13 +32,31 @@
 		margin: 5px;
 		float: left;
 	}
-	
+
+	.height {
+		height: 38px;
+	}
+
+	.overflow {
+		overflow: hidden;
+	}
+
+	.add-div {
+		clear: both;
+	}
+
+	.clear-fix::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
 	</style>
 
 </head>
 <body>
 
-<h1>Clear Fix</h1>	
+<h1>Clear Fix</h1>
 
 <p>When all the contnet within an element is floated its parent element will not have a height.  This is beause the content that is floated is pulled form the flow there for not occuping any space.</p>
 

@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font: 100% arial;
+  background-color: #c0c0c0;
+}
+
+.box-model {
+  color: #ffffff;
+  background-color: #cc00ff;
+  width: calc(400px - 4em - 20px);
+  height: calc(200px - 4em - 10px);
+  padding: 2em;
+  border: 10px solid #00ffee;
+  margin-bottom: 1em;
+  box-sizing: content-box;
+}
+
+.box-border {
+  background-color: #ff00cc;
+  width: 400px;
+  height: 200px;
+  padding: 2em;
+  border: 7.5px solid #eeff00;
+}
