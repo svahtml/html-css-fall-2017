@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pos Layout</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: arial;
+      background-color: lightgray;
+    }
+
+    h1, h2, h3 {
+      margin: 0;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+
+    .wrapper {
+      border: 1px solid black;
+      width: 80%;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .header {
+      background-color: lightpink;
+      padding: 1em;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+
+    .nav {
+      padding: 1em;
+      background-color: lightgreen;
+      position: absolute;
+      top: 69px;
+      width: 20%;
+    }
+
+    .main {
+      padding: 1em;
+      background-color: white;
+      position: absolute;
+      top: 69px;
+      left: 20%;
+      right: 20%;
+    }
+
+    .sidebar {
+      padding: 1em;
+      background-color: lightblue;
+      position: absolute;
+      top: 69px;
+      right: 0;
+      width: 20%;
+    }
+
+    .footer {
+      padding: 1em;
+      background-color: lightyellow;
+      position: absolute;
+      top: 490px;
+      left: 0;
+      right: 0;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <h1>Page title</h1>
+    </header>
+    <nav class="nav">
+      <ul>
+        <li><a href="">Nav Item 1</a></li>
+        <li><a href="">Nav Item 2</a></li>
+        <li><a href="">Nav Item 3</a></li>
+        <li><a href="">Nav Item 4</a></li>
+      </ul>
+    </nav>
+    <article class="main">
+      <h2>Lorem ipsum dolor sit.</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi itaque ipsa, dignissimos unde rerum necessitatibus ullam quos cum, aut nobis at magni sit adipisci vel ratione dolores eius voluptas quisquam?</p>
+      <p>Necessitatibus totam sit officiis a non, deleniti praesentium. Harum aut dolores, ullam odio. Libero eius dignissimos iste aspernatur perspiciatis, eum officiis id sunt quos, voluptatibus, ex quisquam architecto eligendi. Cupiditate!</p>
+      <p>Dolorum quia quaerat, nisi ratione natus voluptate fugit maxime debitis excepturi, repellendus quisquam delectus molestiae? Eveniet, inventore consectetur assumenda numquam tempore. Obcaecati aperiam animi omnis accusantium. Laboriosam, assumenda facilis at.</p>
+    </article>
+    <aside class="sidebar">
+      <h3>Lorem ipsum dolor.</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa magnam, ad ducimus eum deserunt aut! Nulla repellat, ullam repellendus iste deleniti rem fugit, facilis placeat perferendis, ipsa, facere dolorum omnis.</p>
+    </aside>
+    <footer class="footer">
+      &copy; 2001
+    </footer>
+  </div>
+</body>
+</html>
