@@ -1,0 +1,20 @@
+.gallery {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery li {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.gallery li:nth-child(3n) {
+  margin-right: 0;
+}
+
+.gallery img {
+  display: block;
+}
