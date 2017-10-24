@@ -1,19 +1,30 @@
 .nav ul {
-  
+  display: flex;
 }
 
 .flex-direction ul {
-
+flex-direction: row-reverse;
 }
 
-.justify-conten ul {
-
+.justify-content ul {
+justify-content: space-around;
 }
 
 .align-items ul {
   height: 200px;
+  align-items:flex-start;
 }
 
-.flex-grow {
-  
+.flex-grow li {
+  flex-grow: 1;
+
+}
+
+.flex-grow li.active {
+  flex-grow: 2;
+  flex-basis: 300px;
+}
+
+.flex-shrink li {
+
 }
