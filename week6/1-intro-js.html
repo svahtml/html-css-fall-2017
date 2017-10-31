@@ -7,7 +7,7 @@
 <body>
 
   <h1 id="header">Intro to JavaScript</h1>
-  
+
   <div class="intro">
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi minus suscipit eos maxime. Expedita commodi enim voluptate, tempore unde iure sit cum, nulla labore nostrum fuga, deleniti itaque minima nesciunt.</p>
     <p>Nulla a, fuga minima doloremque sed dicta repellendus reprehenderit inventore minus maxime odio quaerat consectetur ratione optio, odit unde illum? Nostrum fugit harum, nisi quidem totam vel ipsam exercitationem repellat?</p>
@@ -26,9 +26,179 @@
 	</ol>
 
 	<script>
+		// JavaScript Comment
+
+		// create a variable, set and change
+		var name;
+		name = "Dan";
+		console.log(name, "Start");
+		name = "Tim";
+		console.log(name, "End");
+
+		// Boolean is a true or false value
+		var isHappy = true;
+		console.log(isHappy);
+		isHappy = false;
+		console.log(isHappy);
+
+		// an if statement checks if something is true
+		if (isHappy) {
+			console.log("YES We are happy!");
+		} else {
+			console.log("We are not Happy");
+		}
+
+		// null
+		var notSet = null;
+		console.log(notSet);
+
+		// Undefined
+		var x;
+
+		console.log(x);
+
+		// Numbers
+
+		console.log(2 + 4);
+		console.log(4 - 2);
+		console.log(3 * 3);
+		console.log(12 / 4);
+
+		console.log(3 + "a");
+		console.log(3 / "a");
+
+		// Strings
+		var myName = "Dan Hahn";
+		console.log(myName);
+
+		var firstName = "Dan";
+		var lastName = "Hahn";
+
+		var fullName = firstName + " " + lastName;
+
+		console.log(fullName);
+
+		console.log(`${firstName} ${lastName}`);
+
+		// Array
+		// An array is collection of data that ordred and be retreved based on its index.
+
+		// Arrays are zero based index meaning the first item is at postion 0.
+
+		// An Array has length
+
+		var fruits = ['Apple', 'Banana'];
+
+		console.log(fruits.length);
+
+		// get first item off the array
+		var first = fruits[0];
+		console.log(first);
+
+		fruits.push('Grape');
+		console.log(fruits.length);
+
+		var last = fruits[fruits.length - 1];
+		console.log(last);
+
+		console.log(fruits);
+
+		for(let i = 0; i < fruits.length; i++) {
+			console.log(
+				`Current item is ${i + 1} = ${fruits[i]}`
+			)
+		}
+
+		// Objects
+
+		var person = {
+			firstName: "Dan",
+			lastName: "Hahn",
+			email: "dan@svahtml.com",
+			interests: ['html', 'css', 'JavaScript'],
+			isCool: false,
+			age: 22
+		};
+
+		console.log(person);
+
+		// access a value on the Objects
+		console.log(person['firstName']);
+		console.log(person.age);
+		console.log(person.email);
+
+		// add an item to the person object.
+		person.city = "New York";
+
+		console.log(person);
+
+		var people = person;
+		people.firstName = "Tim";
+
+		console.log(person);
+
+		// lets build a function that says "hello world!" to the console.
+
+		function sayHi(displayName) {
+			var greeting = `Hello ${displayName}!`;
+			console.log(greeting);
+		}
+
+		// the function will only fire when its called.
+
+		// lets call our function
+		sayHi('Dan');
+
+		function calcDogAge(age) {
+			return age * 7;
+		}
+
+		// dogGreeting
+		// - dog name (string)
+		// - age (number - calc in dog year) years * 7
+		// - greeting (strig)
+		function dogGreeting(dogName, age, greeting) {
+			var dogAge = calcDogAge(age);
+			var dogSpeak = greeting.repeat(2);
+			return `${dogSpeak} ${dogName} is ${dogAge} years old`;
+		}
+
+		var returned = dogGreeting('Snickers', 2, "Woof");
+		console.log(returned);
+
+		var newDiv = document.createElement('p');
+		var newContent = document.createTextNode(returned);
+		newDiv.appendChild(newContent);
+
+		var currentButton = document.getElementById('click');
+		document.body.insertBefore(newDiv, currentButton);
+
 
 
 	</script>
-	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!--  -->
 </body>
 </html>
