@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Intro to JS</title>
+</head>
+<body>
+
+  <h1 id="header">Intro to JavaScript</h1>
+
+  <div class="intro">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi minus suscipit eos maxime. Expedita commodi enim voluptate, tempore unde iure sit cum, nulla labore nostrum fuga, deleniti itaque minima nesciunt.</p>
+    <p>Nulla a, fuga minima doloremque sed dicta repellendus reprehenderit inventore minus maxime odio quaerat consectetur ratione optio, odit unde illum? Nostrum fugit harum, nisi quidem totam vel ipsam exercitationem repellat?</p>
+    <p>Explicabo quod natus alias debitis, eveniet saepe vel necessitatibus, nesciunt recusandae pariatur ipsa laborum, aperiam molestiae maxime. Error voluptatibus beatae quaerat dolores similique dolorem ad fuga iusto sint, laborum vel.</p>
+  </div>
+
+	<button id="click">Click Me</button>
+	<input type="text" class="new-name">
+
+	<ol>
+		<li>Red</li>
+		<li>Yellow</li>
+		<li>Orange</li>
+		<li>Blue</li>
+		<li>Purple</li>
+	</ol>
+
+	<script>
+	//JavaScript Comment
+
+	//create a variable, set and change
+	var name;
+	name = "Charlos";
+	console.log(name, "Start");
+	name = "Tim";
+	console.log(name, "End");
+
+	//Boolean is a true or false value
+	var isHappy = true;
+	console.log(isHappy);
+	isHappy = false;
+	console.log(isHappy);
+
+	// and if statement check is something is true
+
+	if (isHappy === 3) {
+		console.log("Yes")
+	} else {
+		console.log("We are not Happy");
+	}
+
+	//null
+	var notSet = null;
+	console.log(notSet);
+
+	//Undefined
+	var x;
+
+	console.log(x);
+
+	var firstName = "Charlos";
+	var lastName = "Gary";
+
+	var fullName = firstName + lastName;
+
+	console.log(fullName);
+
+	console.log(`${firstName} ${lastName}`);
+
+
+
+	//An Array
+
+	var fruits =['Apple', 'Banana'];
+
+	console.log(fruits.length);
+
+	var first = fruits[0];
+	console.log(first);
+
+	fruits.push('Grape');
+	console.log(fruits.length);
+
+	var last = fruits[fruits.length - 1];
+	console.log(last);
+
+	for(let i = 0; i < fruits.length; i++) {
+		console.log(`Current item is ${i + 1} = ${fruits[i]}`)
+	}
+
+	var person = {
+		firstName: "Dan",
+		lastName: "Hahn",
+		email: "dan@svahtml.com",
+		interests: ['html', 'css', 'java'],
+		isCool: false,
+		age: 22
+	};
+
+	console.log(person);
+
+console.log(person['firstName']);
+console.log(person.age);
+console.log(person.email);
+
+person.city = "New York";
+console.log(person)
+
+var people = person;
+person.firstName = "Tim";
+console.log(person);
+
+
+function sayHi(displayName) {
+	var greeting = `Hello ${displayName}!`;
+	console.log(greeting);
+}
+
+sayHi('Dan');
+
+function calcDogAge(age) {
+	return age * 7;
+}
+
+function dogGreeting(dogName, age, greeting) {
+	var dogAge = age * 7;
+	var dogSpeak = greeting.repeat(2);
+	return (`${dogSpeak} ${dogName} is ${dogAge} years old`);
+}
+
+var returned = dogGreeting(`Snickers`, 2, "Woof");
+console.log(returned)
+
+var newDiv = document.createElement('p');
+var newContent = document.createTextNode(returned);
+newDiv.appendChild(newContent);
+
+var currentButton = document.getElementById('click');
+document.body.insertBefore(newDiv, currentButton);
+
+
+	</script>
+
+</body>
+</html>
