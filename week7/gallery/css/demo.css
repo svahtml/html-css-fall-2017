@@ -1,0 +1,37 @@
+/* General Demo Style */
+body {
+	background: #f9f9f9;
+	color: #333;
+	font-size: 13px;
+	font-family: 'Oswald', Arial, sans-serif;
+}
+
+h1, h2, p {
+	margin: 0;
+}
+
+.container {
+	position: relative;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.main {
+	position: relative;
+	margin: 0 auto;
+	width: 680px;
+}
+
+h1 {
+	margin: 0;
+	padding: 20px 20px 10px 20px;
+	color: #333;
+	text-align: center;
+	text-shadow: 1px 1px 1px #fff;
+	font-weight: 400;
+	font-size: 34px;
+}
+

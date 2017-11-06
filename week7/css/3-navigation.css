@@ -1,0 +1,50 @@
+nav {
+  background-color: #663399;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: .5em 1em;
+}
+
+
+.top-level {
+
+}
+
+.top-level > li {
+
+}
+
+.top-level > li > a {
+
+}
+
+.top-level > li:hover .sub-nav {
+
+}
+
+.top-level > li:hover > a {
+
+}
+
+.sub-nav {
+
+}
+
+.sub-nav a {
+  color: black;
+}
+
+.sub-nav a:hover {
+  background-color: #000;
+  color: white;
+}

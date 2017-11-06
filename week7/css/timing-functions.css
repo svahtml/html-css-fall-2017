@@ -1,0 +1,89 @@
+body, html {
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  background-color: #c0c0c0;
+}
+
+.wrapper {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.box {
+  width: 0;
+  height: 50px;
+  background-color: red;
+  animation: resize 4s infinite alternate;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  font: 16px sans-serif;
+  flex: 1;
+}
+
+.ease {
+  animation-timing-function: ease;
+  background-color: hotpink;
+}
+
+.ease-in {
+  animation-timing-function: ease-in;
+  background-color: orange;
+}
+
+.ease-out {
+  animation-timing-function: ease-out;
+  background-color: gold;
+}
+
+.ease-in-out {
+  animation-timing-function: ease-in-out;
+  background-color: yellowgreen;
+}
+
+.linear {
+  animation-timing-function: linear;
+  background-color: lightblue;
+}
+
+.cubic-bezier {
+  animation-timing-function: cubic-bezier(0.31, 0.81, 1, 1.35);
+  background-color: navy;
+  color: white;
+}
+
+.steps {
+  animation-timing-function: steps(12, end);
+  background-color: purple;
+  color: white;
+}
+
+
+
+/*  
+animation-timing-function: ease;
+animation-timing-function: ease-in;
+animation-timing-function: ease-out;
+animation-timing-function: ease-in-out;
+animation-timing-function: linear;
+animation-timing-function: step-start;
+animation-timing-function: step-end;
+animation-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+animation-timing-function: steps(4, end);
+animation-timing-function: frames(10);
+*/
+
+@keyframes resize {
+  to {
+    width: 100%;
+  }
+}
