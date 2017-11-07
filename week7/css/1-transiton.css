@@ -5,12 +5,22 @@
   margin: 1em 0;
 }
 
+.hover {
+  width: 400px;
+  transition-duration: 2s;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+  transition-delay: .5s;
+}
+
 .hover:hover {
   background-color: lavender;
+  width: 200px;
 }
 
 .width {
   width: 100px;
+  transition: width 1s ease .1s;
 }
 
 .width.on {
@@ -35,6 +45,11 @@
   padding: 0 1em;
   background-color: lavender;
   border-bottom: 1px solid black;
+  transition:
+    opacity 1s,
+    height 1s 1s,
+    border-bottom-width 1s
+  ;
 }
 
 .list li:last-child {

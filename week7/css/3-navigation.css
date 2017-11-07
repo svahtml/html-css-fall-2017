@@ -15,29 +15,34 @@ nav a {
   padding: .5em 1em;
 }
 
-
 .top-level {
-
+  display: flex;
 }
 
 .top-level > li {
-
+  flex: 1;
 }
 
 .top-level > li > a {
-
+  transition: all .5s;
 }
 
 .top-level > li:hover .sub-nav {
-
+  /*display: block;*/
+  max-height: 1000px;
 }
 
 .top-level > li:hover > a {
-
+  background-color: mediumorchid;
 }
 
 .sub-nav {
-
+  background-color: lavender;
+  position: absolute;
+  /*display: none;*/
+  max-height: 0;
+  transition: all .5s;
+  overflow: hidden;
 }
 
 .sub-nav a {

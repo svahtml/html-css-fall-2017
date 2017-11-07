@@ -3,4 +3,38 @@
   width: 100px;
   height: 100px;
   margin: 1em 0;
+  animation-name: example;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  /*animation-delay: .3s;*/
+}
+
+@keyframes example {
+  from {
+    width: 20px;
+    border-radius: 0;
+    height: 10px;
+  }
+  to {
+    width: 400px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: black;
+    transform: rotate(720deg) scale(2);
+  }
+  25% {
+    border-radius: 25px;
+  }
+  30% {
+    background-color: lavender;
+  }
+  75% {
+    height: 50px;
+  }
+  90% {
+    background-color: lavender;
+  }
 }

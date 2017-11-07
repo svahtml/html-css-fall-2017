@@ -55,7 +55,33 @@
 </main>
 
 <script>
-  
+  const btn = document.querySelector('.toggleWidth');
+  const box = document.querySelector('.width');
+  btn.addEventListener('click', () => box.classList.toggle('on'));
+
+  // Select all `.list li` and store it in a var called listLi
+  const listLi = document.querySelectorAll('.list li');
+  const list = document.querySelector('.list');
+
+  function checkInnerHTML() {
+    if(list.childElementCount === 0) {
+      list.innerHTML = "";
+    }
+  }
+
+  function removeChild() {
+    this.remove();
+    checkInnerHTML();
+  }
+
+  function addRemoveClass() {
+    this.classList.add('remove');
+    this.addEventListener('transitionend', removeChild);
+  }
+
+  // loop over over every li and add an eventListener to add a class of remove
+  listLi.forEach(item => item.addEventListener('click', addRemoveClass));
+
 </script>
 
 </body>
