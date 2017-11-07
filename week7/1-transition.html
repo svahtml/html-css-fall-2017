@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Intro To Transitons</title>
+  <link rel="stylesheet" href="css/0-base.css">
+  <link rel="stylesheet" href="css/1-transiton.css">
+</head>
+<body>
+
+<main class="wrapper">
+  <header>
+    <h1>Intro to CSS Transtions</h1>
+  </header>
+  <article class="content">
+    <h2>Properties</h2>
+    <ul>
+      <li>transition</li>
+      <li>transition-delay</li>
+      <li>transition-duration</li>
+      <li>transition-property</li>
+      <li>transition-timing-function</li>
+    </ul>
+
+    <h2>hover</h2>
+
+    <div class="box hover">
+
+    </div>
+
+    <h2>User Click</h2>
+
+    <p>Use Javascript to add an event listener to the button then add or remove a class on the box.</p>
+
+    <button class="toggleWidth">Toggle Width</button>
+
+    <div class="box width"></div>
+
+    <h2>Multi Change</h2>
+
+    <p>Using a transition-dalay you can string trantions together</p>
+
+    <ul class="list">
+      <li>Lorem ipsum dolor.</li>
+      <li>Consequatur, hic neque.</li>
+      <li>Molestias saepe, delectus!</li>
+      <li>Mollitia, unde inventore.</li>
+      <li>Beatae, nihil, quis.</li>
+    </ul>
+
+  </article>
+
+</main>
+
+<script>
+  const btn = document.querySelector('.toggleWidth');
+  const box = document.querySelector('.width');
+  btn.addEventListener('click', () => box.classList.toggle('on'));
+
+  //select all ".list li" and store it in a var called listLi//
+  const listLi = document.querySelectorAll('.list li');
+  console.log(listLi);
+  const list = document.querySelector('.list');
+
+
+
+  function checkInnerHTML() {
+    if(list.childElementCount === 0) {
+      list.innerHTML ="";
+    }
+  }
+
+
+  function removeChild() {
+    this.remove();
+    checkInnerHTML();
+  }
+
+  function addRemoveClass() {
+    this.classList.add('remove');
+    this.addEventListener('transitionend', removeChild);
+  }
+
+  //loop over every li and add and eventListener to add a class of remove//
+
+listLi.forEach(item => item.addEventListener('click', addRemoveClass));
+
+
+
+</script>
+
+</body>
+</html>
