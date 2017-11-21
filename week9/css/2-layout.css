@@ -1,0 +1,83 @@
+html, body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+
+
+
+.container {
+  display: grid;
+  grid-template-columns:
+  minmax(0, 1fr)
+  [start]
+  300px
+  [promo1]
+  minmax(100px, 1fr)
+  [promo2]
+  minmax(100px, 1fr)
+  [promo3]
+  minmax(100px, 1fr)
+  [end]
+  minmax(0, 1fr)
+  ;
+
+  grid-template-rows:
+  [top]
+  100px
+  [nav]
+  1fr
+  [promo]
+  100px
+  [footer]
+  100px
+  [bottom];
+  grid-gap: 1em;
+  min-height: 100vh;
+}
+
+header {
+  background-color: red;
+  grid-column: start / end;
+
+}
+
+nav {
+  background-color: orange;
+  grid-row: nav / footer;
+  grid-column: start / promo1;
+}
+
+article {
+  background-color: yellowgreen;
+  grid-column: promo1 / end;
+}
+
+aside {
+  background-color: lightblue;
+}
+
+aside:nth-of-type(1){
+  background-color: tan;
+  grid-column: promo1 / promo2;
+}
+
+aside:nth-of-type(2){
+  background-color: brown;
+  grid-column: promo2 / promo3;
+}
+
+aside:nth-of-type(3){
+  background-color: yellow;
+  grid-column: promo3 / end;
+}
+
+
+
+footer {
+  background: purple;
+  grid-column: start / end;
+}
