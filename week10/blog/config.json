@@ -1,0 +1,26 @@
+{
+  "locals": {
+    "url": "http://localhost:8080",
+    "name": "Dan Hahn's Great Blog",
+    "owner": "Someone",
+    "description": "A Great Place for a Great Blog"
+  },
+  "plugins": [
+    "./plugins/paginator.coffee"
+  ],
+  "require": {
+    "moment": "moment",
+    "_": "underscore",
+    "typogr": "typogr"
+  },
+  "jade": {
+    "pretty": true
+  },
+  "markdown": {
+    "smartLists": true,
+    "smartypants": true
+  },
+  "paginator": {
+    "perPage": 3
+  }
+}
