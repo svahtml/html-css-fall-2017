@@ -1,0 +1,29 @@
+.Gallery {
+  margin: 0 auto;
+  width: 1000px;
+  overflow: hidden;
+}
+
+.Gallery__items {
+  display: flex;
+  transition: all .2s;
+}
+
+.Gallery__item {
+  position: relative;
+}
+
+.Gallery__image {
+  display: block;
+}
+
+.Gallery__caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 1em;
+  color: white;
+  margin: 0;
+}
